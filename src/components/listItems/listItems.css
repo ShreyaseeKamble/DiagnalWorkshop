@@ -1,0 +1,18 @@
+.list_items {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+    padding: 96px 15px;
+    background-color: black;
+    overflow-y: scroll;
+}
+
+.list_items:-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+  }
+  
+.list_items {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}

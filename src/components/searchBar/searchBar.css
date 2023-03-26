@@ -1,0 +1,19 @@
+.search_bar {
+    background-image: url('../../assets/nav_bar.png');
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 36px;
+    padding-bottom: 36px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: -webkit-fill-available;
+}
+
+.input_box {
+    background: black;
+    border: none;
+    color: #FFFFFF;
+    font-size: 20px;
+    font-family: 'Titillium Web', sans-serif;
+}
