@@ -10,7 +10,6 @@ import SearchBar from "../searchBar/searchBar";
 const ListItems = () => {
   const [data, setData] = useState([]);
   const [page, setPage, nativePage] = useStateRef(1);
-  const [loading, setLoading] = useState(false);
   const [hasMore, setHasMore] = useState(true);
   const {content, searchResults} = store.getState();
   const [ searchText, setText ] = useState('');
@@ -34,9 +33,8 @@ const ListItems = () => {
   }
  
   useEffect(() => {
-    setLoading(true);
-    hasMore && fetchData(); 
-  }, [page]);
+    hasMore && (searchText === '') && fetchData(); 
+  }, [page, searchText, hasMore]);
 
   useEffect(() => {
     window.addEventListener('scroll', trackScrolling);
@@ -53,7 +51,6 @@ const ListItems = () => {
         store.dispatch(loadDataAction(newData));
         const retrivedData = newData['content-items'].content;
         content ? setData([...content, ...retrivedData]) : setData(retrivedData);
-        setLoading(false);
         setHasMore(newData['page-size-returned'] === newData['page-size-requested']);
       });
     } catch (error) {
@@ -88,7 +85,6 @@ const ListItems = () => {
           <div className="list_items">{getListItems()}</div> : 
           <div className="no_data">No Data</div>
       }
-      {loading && hasMore && <div className="no_data">Loading...</div>}
     </div>
   )
 };
