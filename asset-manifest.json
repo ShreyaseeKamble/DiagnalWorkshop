@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/DiagnalWorkshop/static/css/main.a7524ad6.css",
-    "main.js": "/DiagnalWorkshop/static/js/main.4547dc74.js",
+    "main.css": "/DiagnalWorkshop/static/css/main.bec36eed.css",
+    "main.js": "/DiagnalWorkshop/static/js/main.763cc26d.js",
     "static/js/787.204816ba.chunk.js": "/DiagnalWorkshop/static/js/787.204816ba.chunk.js",
     "static/media/poster2.jpg": "/DiagnalWorkshop/static/media/poster2.bf23bfae49d854fec0f2.jpg",
     "static/media/poster1.jpg": "/DiagnalWorkshop/static/media/poster1.d966e333249e4f74e821.jpg",
@@ -13,12 +13,12 @@
     "static/media/poster4.jpg": "/DiagnalWorkshop/static/media/poster4.a2f1de9b0f0c656226d7.jpg",
     "static/media/poster7.jpg": "/DiagnalWorkshop/static/media/poster7.8f23c2d5749c68467aaf.jpg",
     "index.html": "/DiagnalWorkshop/index.html",
-    "main.a7524ad6.css.map": "/DiagnalWorkshop/static/css/main.a7524ad6.css.map",
-    "main.4547dc74.js.map": "/DiagnalWorkshop/static/js/main.4547dc74.js.map",
+    "main.bec36eed.css.map": "/DiagnalWorkshop/static/css/main.bec36eed.css.map",
+    "main.763cc26d.js.map": "/DiagnalWorkshop/static/js/main.763cc26d.js.map",
     "787.204816ba.chunk.js.map": "/DiagnalWorkshop/static/js/787.204816ba.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a7524ad6.css",
-    "static/js/main.4547dc74.js"
+    "static/css/main.bec36eed.css",
+    "static/js/main.763cc26d.js"
   ]
 }
