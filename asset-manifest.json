@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/DiagnalWorkshop/static/css/main.bec36eed.css",
-    "main.js": "/DiagnalWorkshop/static/js/main.27b9cc9d.js",
+    "main.js": "/DiagnalWorkshop/static/js/main.effaa221.js",
     "static/js/787.204816ba.chunk.js": "/DiagnalWorkshop/static/js/787.204816ba.chunk.js",
     "static/media/poster2.jpg": "/DiagnalWorkshop/static/media/poster2.bf23bfae49d854fec0f2.jpg",
     "static/media/poster1.jpg": "/DiagnalWorkshop/static/media/poster1.d966e333249e4f74e821.jpg",
@@ -14,11 +14,11 @@
     "static/media/poster7.jpg": "/DiagnalWorkshop/static/media/poster7.8f23c2d5749c68467aaf.jpg",
     "index.html": "/DiagnalWorkshop/index.html",
     "main.bec36eed.css.map": "/DiagnalWorkshop/static/css/main.bec36eed.css.map",
-    "main.27b9cc9d.js.map": "/DiagnalWorkshop/static/js/main.27b9cc9d.js.map",
+    "main.effaa221.js.map": "/DiagnalWorkshop/static/js/main.effaa221.js.map",
     "787.204816ba.chunk.js.map": "/DiagnalWorkshop/static/js/787.204816ba.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.bec36eed.css",
-    "static/js/main.27b9cc9d.js"
+    "static/js/main.effaa221.js"
   ]
 }
