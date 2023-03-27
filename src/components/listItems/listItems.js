@@ -27,6 +27,11 @@ const ListItems = () => {
   const handleInputChange = (value) => {
     setText(value);
   }
+  
+  const handleBackButtonClicked = () => {
+    setText('');
+    setData(content);
+  }
  
   useEffect(() => {
     setLoading(true);
@@ -76,7 +81,8 @@ const ListItems = () => {
 
   return (
     <div className="container">
-      <SearchBar searchText={searchText} handleInputBlur={handleInputBlur} handleInputChange={handleInputChange}></SearchBar>
+      <SearchBar searchText={searchText} handleInputBlur={handleInputBlur} 
+        handleInputChange={handleInputChange} handleBackButtonClicked={handleBackButtonClicked}></SearchBar>
       {
         data?.length ? 
           <div className="list_items">{getListItems()}</div> : 
