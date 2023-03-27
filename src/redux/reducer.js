@@ -6,6 +6,7 @@
     sizeReturned: 0,
     total: 0,
     title: '',
+    searchResults: []
   }
 
   const checkWordExist = (item, search) => {
@@ -15,22 +16,24 @@
     }
   }
   
-  const getSearchResults = (search, content) => {
+  const getSearchResults = (search, data) => {
 
-   return content.filter((item) => checkWordExist(item, search))
+    return data.filter((item) => checkWordExist(item, search))
   }
 
   export default function appReducer(state = initialState, action) {
 
     switch (action.type) {
         case "loadData":
+          let arrOldContent = state.content;
+          let arrNewContent = action.payload['content-items'].content;
+
           const updatedState = {
-            ...initialState,
             page: action.payload['page-num-requested'],
             size: action.payload['page-num-requested'],
             sizeReturned: action.payload['page-num-requested'],
             total: action.payload['page-num-requested'],
-            content: action.payload['content-items'].content,
+            content: arrOldContent.concat(arrNewContent),
             title: action.payload['title']
           }
 
@@ -40,10 +43,11 @@
           const results = getSearchResults(action.payload, state.content);
 
           const updatedStateResults = {
-            ...initialState,
-            content: results,
+            searchResults: results,
+            searchText: action.payload,
+            content: state.content
           };
-          
+
           return updatedStateResults;
 
         default:

@@ -7,7 +7,7 @@ const ListItem = ({imgPath, label}) => {
   try {
     placeholderImage = require(`../../assets/${imgPath}`);
   } catch {
-    placeholderImage = require(`../../assets/poster9.jpg`)
+    placeholderImage = require(`../../assets/placeholder_for_missing_posters.png`)
   }
 
   return (

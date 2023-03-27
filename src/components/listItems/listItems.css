@@ -1,18 +1,31 @@
 .list_items {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 10px;
-    padding: 96px 15px;
-    background-color: black;
-    overflow-y: scroll;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 10px;
+  padding: 96px 15px;
+  background-color: black;
+  overflow-y: scroll;
+}
+
+.container {
+  display: block;
 }
 
 .list_items:-webkit-scrollbar {
-    width: 0px;
-    background: transparent;
-  }
+  width: 0px;
+  background: transparent;
+}
   
 .list_items {
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
+}
+
+.no_data {
+  text-align: center;
+  color: #FFFFFF;
+  font-size: 36px;
+  position: relative;
+  top: 96px;
+  background: black;
 }

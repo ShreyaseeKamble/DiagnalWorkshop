@@ -4,18 +4,34 @@ import { loadDataAction } from "../../redux/action/loadDataAction";
 import './listItems.css';
 import store from '../../redux/store';
 import useStateRef from '../../hook/useStateRef';
+import setSearchData from '../../redux/action/setSearchData';
+import SearchBar from "../searchBar/searchBar";
 
 const ListItems = () => {
   const [data, setData] = useState([]);
   const [page, setPage, nativePage] = useStateRef(1);
   const [loading, setLoading] = useState(false);
   const [hasMore, setHasMore] = useState(true);
-  const {content} = store.getState();
+  const {content, searchResults} = store.getState();
+  const [ searchText, setText ] = useState('');
 
+  const handleInputBlur = () => {
+    store.dispatch(setSearchData(searchText));
+    if(searchText === '') {
+      setData(content);
+    } else {
+      setData(searchResults)
+    }
+  }
+
+  const handleInputChange = (value) => {
+    setText(value);
+  }
+ 
   useEffect(() => {
     setLoading(true);
     hasMore && fetchData(); 
-  }, [page, hasMore]);
+  }, [page]);
 
   useEffect(() => {
     window.addEventListener('scroll', trackScrolling);
@@ -27,7 +43,7 @@ const ListItems = () => {
       let url = 'http://localhost:3000/page'+page;
       fetch(url).then(
         (response) => response.json()
-      ).then((data) => {      
+      ).then((data) => {  
         let newData = data.page;
         store.dispatch(loadDataAction(newData));
         const retrivedData = newData['content-items'].content;
@@ -46,9 +62,9 @@ const ListItems = () => {
 
   const trackScrolling = () => {
     const wrappedElement = document.getElementsByClassName('list_items');
+
     if (isBottom(wrappedElement[0])) {
       setPage(nativePage?.current+1);
-      document.removeEventListener('scroll', trackScrolling);
     }
   };
 
@@ -59,9 +75,14 @@ const ListItems = () => {
   };
 
   return (
-    <div className="list_items">
-      {getListItems()}
-      {loading && <div>Loading...</div>}
+    <div className="container">
+      <SearchBar searchText={searchText} handleInputBlur={handleInputBlur} handleInputChange={handleInputChange}></SearchBar>
+      {
+        data?.length ? 
+          <div className="list_items">{getListItems()}</div> : 
+          <div className="no_data">No Data</div>
+      }
+      {loading && hasMore && <div className="no_data">Loading...</div>}
     </div>
   )
 };
