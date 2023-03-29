@@ -6,7 +6,6 @@ import store from '../../redux/store';
 import useStateRef from '../../hook/useStateRef';
 import setSearchData from '../../redux/action/setSearchData';
 import SearchBar from "../searchBar/searchBar";
-import myJsonData from '../../../pagone.json';
 
 const ListItems = () => {
   const [data, setData] = useState([]);
@@ -44,7 +43,8 @@ const ListItems = () => {
 
   const fetchData = () => {
     try {
-      let url = 'http://localhost:3000/page'+page;
+      let url = 'https://shreyaseekamble.github.io/DiagnalWorkshop/public/page'+page+'.json';
+      console.log(url);
       fetch(url).then(
         (response) => response.json()
       ).then((data) => {  
