@@ -6,6 +6,7 @@ import store from '../../redux/store';
 import useStateRef from '../../hook/useStateRef';
 import setSearchData from '../../redux/action/setSearchData';
 import SearchBar from "../searchBar/searchBar";
+import myJsonData from '../../../pagone.json';
 
 const ListItems = () => {
   const [data, setData] = useState([]);
