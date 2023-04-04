@@ -43,7 +43,7 @@ const ListItems = () => {
 
   const fetchData = () => {
     try {
-      let url = 'https://shreyaseekamble.github.io/DiagnalData/'+page+'.json';
+      let url = 'https://shreyaseekamble.github.io/DiagnalData/page'+page+'.json';
       fetch(url).then(
         (response) => response.json()
       ).then((data) => {  
