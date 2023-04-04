@@ -59,7 +59,7 @@ const ListItems = () => {
   }
 
   const isBottom = (el) => {
-    return el.getBoundingClientRect().bottom <= window.innerHeight;
+    return el.getBoundingClientRect().bottom >= window.innerHeight;
   }
 
   const trackScrolling = () => {
