@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/http//Shreyasee.Kamble.github.io/DiagnalWorkshop/public/static/css/main.4988fa4f.css",
-    "main.js": "/http//Shreyasee.Kamble.github.io/DiagnalWorkshop/public/static/js/main.4fbf87db.js",
-    "static/js/787.204816ba.chunk.js": "/http//Shreyasee.Kamble.github.io/DiagnalWorkshop/public/static/js/787.204816ba.chunk.js",
-    "static/media/poster2.jpg": "/http//Shreyasee.Kamble.github.io/DiagnalWorkshop/public/static/media/poster2.bf23bfae49d854fec0f2.jpg",
-    "static/media/poster1.jpg": "/http//Shreyasee.Kamble.github.io/DiagnalWorkshop/public/static/media/poster1.d966e333249e4f74e821.jpg",
-    "static/media/poster3.jpg": "/http//Shreyasee.Kamble.github.io/DiagnalWorkshop/public/static/media/poster3.7ee7b802517e3b685aaf.jpg",
-    "static/media/poster5.jpg": "/http//Shreyasee.Kamble.github.io/DiagnalWorkshop/public/static/media/poster5.d0a9cf21d7e7d56979e2.jpg",
-    "static/media/poster8.jpg": "/http//Shreyasee.Kamble.github.io/DiagnalWorkshop/public/static/media/poster8.61013e431fa5ca643217.jpg",
-    "static/media/poster9.jpg": "/http//Shreyasee.Kamble.github.io/DiagnalWorkshop/public/static/media/poster9.080f33854a8c02368de2.jpg",
-    "static/media/poster6.jpg": "/http//Shreyasee.Kamble.github.io/DiagnalWorkshop/public/static/media/poster6.57e30e483bb184bc63b9.jpg",
-    "static/media/poster4.jpg": "/http//Shreyasee.Kamble.github.io/DiagnalWorkshop/public/static/media/poster4.a2f1de9b0f0c656226d7.jpg",
-    "static/media/poster7.jpg": "/http//Shreyasee.Kamble.github.io/DiagnalWorkshop/public/static/media/poster7.8f23c2d5749c68467aaf.jpg",
-    "index.html": "/http//Shreyasee.Kamble.github.io/DiagnalWorkshop/public/index.html",
-    "main.4988fa4f.css.map": "/http//Shreyasee.Kamble.github.io/DiagnalWorkshop/public/static/css/main.4988fa4f.css.map",
-    "main.4fbf87db.js.map": "/http//Shreyasee.Kamble.github.io/DiagnalWorkshop/public/static/js/main.4fbf87db.js.map",
-    "787.204816ba.chunk.js.map": "/http//Shreyasee.Kamble.github.io/DiagnalWorkshop/public/static/js/787.204816ba.chunk.js.map"
+    "main.css": "/http//Shreyasee.Kamble.github.io/DiagnalWorkshop/static/css/main.be4f577b.css",
+    "main.js": "/http//Shreyasee.Kamble.github.io/DiagnalWorkshop/static/js/main.032c8cc3.js",
+    "static/js/787.204816ba.chunk.js": "/http//Shreyasee.Kamble.github.io/DiagnalWorkshop/static/js/787.204816ba.chunk.js",
+    "static/media/poster2.jpg": "/http//Shreyasee.Kamble.github.io/DiagnalWorkshop/static/media/poster2.bf23bfae49d854fec0f2.jpg",
+    "static/media/poster1.jpg": "/http//Shreyasee.Kamble.github.io/DiagnalWorkshop/static/media/poster1.d966e333249e4f74e821.jpg",
+    "static/media/poster3.jpg": "/http//Shreyasee.Kamble.github.io/DiagnalWorkshop/static/media/poster3.7ee7b802517e3b685aaf.jpg",
+    "static/media/poster5.jpg": "/http//Shreyasee.Kamble.github.io/DiagnalWorkshop/static/media/poster5.d0a9cf21d7e7d56979e2.jpg",
+    "static/media/poster8.jpg": "/http//Shreyasee.Kamble.github.io/DiagnalWorkshop/static/media/poster8.61013e431fa5ca643217.jpg",
+    "static/media/poster9.jpg": "/http//Shreyasee.Kamble.github.io/DiagnalWorkshop/static/media/poster9.080f33854a8c02368de2.jpg",
+    "static/media/poster6.jpg": "/http//Shreyasee.Kamble.github.io/DiagnalWorkshop/static/media/poster6.57e30e483bb184bc63b9.jpg",
+    "static/media/poster4.jpg": "/http//Shreyasee.Kamble.github.io/DiagnalWorkshop/static/media/poster4.a2f1de9b0f0c656226d7.jpg",
+    "static/media/poster7.jpg": "/http//Shreyasee.Kamble.github.io/DiagnalWorkshop/static/media/poster7.8f23c2d5749c68467aaf.jpg",
+    "index.html": "/http//Shreyasee.Kamble.github.io/DiagnalWorkshop/index.html",
+    "main.be4f577b.css.map": "/http//Shreyasee.Kamble.github.io/DiagnalWorkshop/static/css/main.be4f577b.css.map",
+    "main.032c8cc3.js.map": "/http//Shreyasee.Kamble.github.io/DiagnalWorkshop/static/js/main.032c8cc3.js.map",
+    "787.204816ba.chunk.js.map": "/http//Shreyasee.Kamble.github.io/DiagnalWorkshop/static/js/787.204816ba.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4988fa4f.css",
-    "static/js/main.4fbf87db.js"
+    "static/css/main.be4f577b.css",
+    "static/js/main.032c8cc3.js"
   ]
 }
