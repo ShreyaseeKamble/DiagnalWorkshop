@@ -14,6 +14,9 @@ const ListItems = () => {
   const {content, searchResults} = store.getState();
   const [ searchText, setText ] = useState('');
 
+  /**
+   * Function call when search box is blured
+   */
   const handleInputBlur = () => {
     store.dispatch(setSearchData(searchText));
     if(searchText === '') {
@@ -23,24 +26,39 @@ const ListItems = () => {
     }
   }
 
+  /**
+   * Function call when search box is changed
+   */
   const handleInputChange = (value) => {
     setText(value);
   }
-  
+
+  /**
+   * Function call when back button is clicked
+   */
   const handleBackButtonClicked = () => {
     setText('');
     setData(content);
   }
  
+  /**
+   * Use effect for search functionality
+   */
   useEffect(() => {
     hasMore && (searchText === '') && fetchData(); 
   }, [page, searchText, hasMore]);
 
+  /**
+   * scrolling functionality
+   */
   useEffect(() => {
     window.addEventListener('scroll', trackScrolling);
     document.removeEventListener('scroll', trackScrolling);
   }, []);
 
+  /**
+   * Calls specific json file according to page no.
+   */
   const fetchData = () => {
     try {
       let url = 'https://shreyaseekamble.github.io/DiagnalData/page'+page+'.json';
@@ -58,10 +76,18 @@ const ListItems = () => {
     }
   }
 
+  /**
+   * Checks if scroll is at bottom
+   * @param {*} el 
+   * @returns 
+   */
   const isBottom = (el) => {
-    return el.getBoundingClientRect().bottom >= window.innerHeight;
+    return el.getBoundingClientRect().bottom >= (window.innerHeight);
   }
 
+  /**
+   * This functions implements the native scrolling feature
+   */
   const trackScrolling = () => {
     const wrappedElement = document.getElementsByClassName('list_items');
 
@@ -70,6 +96,10 @@ const ListItems = () => {
     }
   };
 
+  /**
+   * Creates multiple list items
+   * @returns list element of component ListItem
+   */
   const getListItems = () => {
     return data && data.map((item, index) => {
       return <ListItem label={item.name} imgPath={item['poster-image']} key={item.name+index}></ListItem>

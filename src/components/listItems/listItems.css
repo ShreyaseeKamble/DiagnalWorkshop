@@ -11,10 +11,10 @@
   display: block;
 }
 
-.list_items:-webkit-scrollbar {
+/* .list_items:-webkit-scrollbar {
   width: 0px;
   background: transparent;
-}
+} */
   
 .list_items {
   -ms-overflow-style: none;  /* IE and Edge */
